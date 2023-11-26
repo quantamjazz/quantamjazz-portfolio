@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Ellie | Front-End Web Developer</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <h2>Eleanor Jenner</h2>
+    <header>
       <nav>
         <ul>
           <li><a href="#about-me">About Me</a></li>
@@ -17,67 +18,111 @@
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
+      <section id="hero-banner">
+        <img src="assets/images/Banner.png" />
+      </section>
     </header>
-<main>
-      <section id="about-me" class="about-me">
-        
-        <div class="about-me-content">
+    <main class="content">
+      <section id="about-me">
         <h2>About Me</h2>
-        <img
-          src="assets/images/IMG_3356.jpeg"
-          class="my-image"
-          alt="Ellie"
-        />
         <p>
           Hi, I'm Ellie! I'm a qualified personal trainer and pole fitness
           instructor with a love for fitness and a strong belief in the power of
           movement. I enjoy helping others achieve their fitness goals and
-          embrace an active and healthy lifestyle.</p>
-          <p>
+          embrace an active and healthy lifestyle.
+        </p>
+        <p>
           I'm also an aspiring front-end developer. I'm currently learning HTML,
-          CSS, and JavaScript to bring my creative ideas to life on
-          the web.</p>
-          <p>
-          I believe that combining my fitness expertise with my
-          front-end development skills will allow me to create innovative online
-          platforms to inspire and empower others on their fitness
-          journey. I'm excited to continue learning and growing in both fitness
-          and web development fields.</p>
-          <p>
-          I'm also a wife, mother, dog mum and home educator. I love to stay busy and constantly on the go! I'm always looking to expand my knowledge, improve my strength and help others.
-          Thank you for taking the time to learn more about me.
-        </p></div>
+          CSS, and JavaScript to bring my creative ideas to life on the web.
+        </p>
+        <p>
+          I believe that combining my fitness expertise with my front-end
+          development skills will allow me to create innovative online platforms
+          to inspire and empower others on their fitness journey. I'm excited to
+          continue learning and growing in both fitness and web development
+          fields.
+        </p>
+        <p>
+          I'm also a wife, mother, dog mum and home educator. I love to stay
+          busy and constantly on the go! I'm always looking to expand my
+          knowledge, improve my strength and help others. Thank you for taking
+          the time to learn more about me.
+        </p>
       </section>
-     <section id="projects">
-       <h2>Projects</h2><br>
-       <section class="project-gallery">
-         <a href="https://quantamjazz.github.io/prework-study-guide/" target="_blank">
-           <img src="https://images.unsplash.com/photo-1518463892881-d587bf2c296a?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="prework-study-guide" alt="image of study set up">
-         </a>
-         <p>Prework Study Guide</p><br>
-         <a href="" target="_blank">
-           <img src="assets/images/pole dance.jpeg" alt="high heels shoes next to dance pole">
-         </a>
-         <p>Pole Position</p><br>
-         <a href="" target="_blank">
-           <img src="assets/images/austin-chan-ukzHlkoz1IE-unsplash.jpg" alt="neon sign reads- this is the sign you've been looking for">
-         </a>
-         <p>Motivational Quote Generator</p><br>
-         <a href="" target="_blank">
-           <img src="assets/images/timo-volz-ZlFKIG6dApg-unsplash.jpg" alt="image of cat stretching">
-         </a>
-         <p>StretchnFlex</p>
-       </section>
-     </section>
-
-    <footer>
-      <section id="contact">
+      <section id="projects">
+        <h2>Projects</h2>
+        <h3>Prework Study Guide</h3>
+        <section class="project-gallery">
+          <a
+            href="https://quantamjazz.github.io/prework-study-guide/"
+            target="_blank"
+          >
+            <img
+              src="assets/images/Prework-Study-Guide.jpeg"
+              class="project-image"
+              alt="image of laptop displaying code"
+            />
+          </a>
+          <div id="placeholders">
+            <div class="project">
+              <h3 class="project-heading">Pole Position</h3>
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/Pole-Position.jpeg"
+                  alt="high heels next to dance pole"
+                />
+              </a>
+            </div>
+            <div class="project">
+              <h3 class="project-heading">Motivational Quote Generator</h3>
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/Motivational-Quote-Generator.jpg"
+                  alt="neon sign reads- this is the sign you've been looking for"
+                />
+              </a>
+            </div>
+            <div class="project">
+              <h3 class="project-heading">StretchnFlex</h3>
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/StretchnFlex.jpeg"
+                  alt="image of woman stretching"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="contact" class="center">
         <h2>Contact</h2>
-        <ul>
-          <li>eleanorcjenner@gmail.com</li>
-          <li>07345678910</li>
-        </ul>
+        <div class="contact-info">
+          <a href="https://github.com/quantamjazz" target="_blank"
+            ><img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/nolan/64/github.png"
+              alt="github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/ellie-jenner-237a1029a/"
+            target="_blank"
+            ><img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/linkedin.png"
+              alt="linkedin"
+          /></a>
+          <p>eleanorcjenner@gmail.com</p>
+          <p>07345678910</p>
+        </div>
       </section>
+    </main>
+    <footer>
+      <a href="https://icons8.com/icon/52539/github">GitHub</a>
+      icon by <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/xuvGCOXi8Wyg/linkedin">LinkedIn</a> icon
+      by <a href="https://icons8.com">Icons8</a>
     </footer>
   </body>
 </html>
