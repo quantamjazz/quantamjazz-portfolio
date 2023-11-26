@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,32 +9,44 @@ body {
   color: white;
   background-color: black;
   text-align: center;
+  overflow-x: hidden;
+  margin: 0 20px;
+  max-width: 100%;
 }
 
-header {
+@media (min-width: 1200px) {
+  body {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+header,
+#contact {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   background-color: black;
-  padding: 10px;
 }
 
 nav ul {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
-nav ul li {
-  margin-right: 10px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
+nav ul li:not(:last-child) {
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -42,16 +55,32 @@ nav ul li a {
   transition: all 0.4s;
   font-size: 18px;
   font-weight: 700;
-  margin: 50px;
+  margin: 0;
 }
 
 nav ul li a:hover {
   color: purple;
 }
 
-#hero-banner img {
-  width: 100%;
+#hero-banner img,
+.project-gallery a:first-child img,
+.project-gallery a:not(:first-child) img,
+.project-image,
+#placeholders img {
+  max-width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+
+#about-me p {
+  margin: 10px 0;
+}
+
+#projects,
+#contact,
+footer {
+  text-align: center;
+  padding-top: 150px;
 }
 
 .content {
@@ -63,27 +92,28 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-.project-gallery a:first-child img {
-  width: 600px;
+.project-gallery a:first-child img,
+.project-gallery a:not(:first-child) img {
   height: auto;
   border-radius: 10px;
+}
+
+.project-gallery a:first-child img {
+  width: 600px;
 }
 
 .project-gallery a:not(:first-child) img {
   width: 200px;
-  height: auto;
-  border-radius: 10px;
 }
 
-#projects {
+.project h2 {
+  text-align: center;
+}
+
+#projects,
+#contact {
   text-align: center;
   margin-top: 20px;
-}
-
-.project-image {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
 }
 
 #placeholders {
@@ -93,20 +123,8 @@ nav ul li a:hover {
   align-items: center;
 }
 
-#placeholders img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  margin: 10px;
-}
-
 .project-gallery {
   position: relative;
-}
-
-#contact {
-  text-align: center;
-  margin: 20px 0;
 }
 
 .contact-info {
@@ -116,10 +134,7 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
-.contact-info a {
-  margin-right: 10px;
-}
-
-.contact-info p {
+.contact-info a,
+contact-info p {
   margin: 0 10px;
 }
