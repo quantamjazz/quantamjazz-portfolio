@@ -27,7 +27,8 @@ N/A
 
 ## Usage
 
-Click the link to scroll to the relevant section on the page
+Click the navbar links to scroll to the relevant section on the page
+
 <img width="1462" alt="Screenshot 2023-11-28 at 19 04 33" src="https://github.com/quantamjazz/quantamjazz-portfolio/assets/148623614/e2b2392b-7988-4310-8f2c-02713b19e2ee">
 
 ![screencapture-quantamjazz-github-io-quantamjazz-portfolio-2023-11-28-18_57_36](https://github.com/quantamjazz/quantamjazz-portfolio/assets/148623614/f27a8023-c5cf-4567-b75b-81b920b94809)
